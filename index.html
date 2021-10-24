@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Mono&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Frontend Mentor | Tip calculator app</title>
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div id="tip">
+      <div class="logo-heading">
+        <img src="./images/logo.svg" class="logo" rel="logo" />
+      </div>
+      <!-- input -->
+      <div class="tip-calculator">
+        <div class="calculator">
+          <!-- bill -->
+          <div class="input">
+            <div class="select">
+              <div class="header">Bill</div>
+              <div class="input">
+                <img
+                  src="./images/icon-dollar.svg"
+                  class="icon"
+                  rel="icon a dolla sign"
+                />
+                <input
+                  id="bill"
+                  type="number"
+                  class="form-control"
+                  placeholder="0"
+                />
+              </div>
+            </div>
+            <!-- Select Tip % -->
+            <div class="container">
+              <div class="header">Select Tip %</div>
+              <div class="row justify-content-center">
+                <button id="percent5" class="col-6 col-4 btn">5%</button>
+                <button id="percent10" class="col-6 col-4 btn">10%</button>
+                <button id="bg-color" class="col-6 col-4 btn">15%</button>
+                <button id="percent25" class="col-6 col-4 btn">25%</button>
+                <button id="percent50" class="col-6 col-4 btn">50%</button>
+                <input
+                  class="col-6 col-4"
+                  id="bg-ct"
+                  type="number"
+                  placeholder="Custom"
+                />
+              </div>
+            </div>
+            <!-- Number of People -->
+            <div class="select">
+              <div id="format">
+                <div id="number-people" class="header">Number of People</div>
+                <div id="error" class="error-message"></div>
+              </div>
+              <div class="input">
+                <img
+                  src="./images/icon-person.svg"
+                  class="icon"
+                  rel="icon a dolla sign"
+                />
+                <input
+                  id="people"
+                  type="number"
+                  class="form-control hide"
+                  placeholder="0"
+                />
+              </div>
+            </div>
+          </div>
+          <!-- output -->
+          <div class="output-info">
+            <div class="output-left">
+              <div class="tip-amount total">
+                <h1 class="output-header">Tip Amount</h1>
+                <p class="output-content">/ person</p>
+              </div>
+              <div id="tip-amount" class="count">$0.00</div>
+            </div>
+            <div class="output-left">
+              <div class="tip-amount total">
+                <h1 class="output-header">Total</h1>
+                <p class="output-content">/ person</p>
+              </div>
+              <div id="total" class="count">$0.00</div>
+            </div>
+            <button  id="reset" >RESET</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./app.js"></script>
+  </body>
+</html>

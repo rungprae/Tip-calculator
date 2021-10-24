@@ -1,0 +1,239 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  padding: 0;
+  margin: 0;
+  min-height: calc(100vh - 50px);
+  max-width: 100vh;
+  background-color: hsl(185, 41%, 84%);
+  margin-left: auto;
+  margin-right: auto;
+}
+#tip {
+  padding-top: 50px;
+  text-align: center;
+  font-family: "Space Mono", monospace;
+}
+.tip-calculator {
+  min-height: 100vh;
+  max-width: 100vh;
+  display: flex;
+  justify-content: center;
+}
+.calculator {
+  background-color: hsl(0, 0%, 100%);
+  height: 789px;
+  width: 375px;
+  margin-top: 40px;
+  padding: 0 32px 32px;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.output-info {
+  background-color: hsl(183, 100%, 15%);
+  width: 327px;
+  height: 257px;
+  border-radius: 20px;
+}
+input::-webkit-inner-spin-button {
+  appearance: none;
+}
+.header {
+  font-size: 11px;
+  color: hsl(183, 100%, 15%);
+  font-weight: 400;
+  text-align: left;
+  margin-top: 38px;
+}
+.icon {
+  position: absolute;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  padding: 16px 0 16px 16px;
+}
+.form-control {
+  text-align: right;
+  height: 48px;
+  padding-right: 16px;
+  margin-top: 10px;
+  font-size: 20px;
+  font-weight: 700;
+  border-radius: 5px;
+  background-color: hsl(189, 41%, 97%);
+  border-color: hsl(189, 41%, 97%);
+  color: hsl(183, 100%, 15%);
+}
+.form-control:hover {
+  border: 2px solid hsl(172, 67%, 45%);
+  cursor: pointer;
+}    
+.form-control:focus {
+  box-shadow: none;
+  border: 2px solid hsl(172, 67%, 45%);
+}
+::placeholder {
+  color: hsl(183, 100%, 15%) !important;
+}
+.col-6 {
+  width: 147px;
+  height: 48px;
+  border-radius: 5px;
+  gap: 16px;
+  padding: 0;
+  font-size: 20px;
+  font-weight: 700;
+  background-color: hsl(183, 100%, 15%);
+  color: hsl(189, 41%, 97%);
+  border: none;
+}
+.col-6:hover {
+  color: hsl(183, 100%, 15%);
+  background-color: hsl(173deg 61% 77%);
+  cursor: pointer;
+}
+.active{
+  background-color: hsl(172, 67%, 45%);
+  color: hsl(183, 100%, 15%);
+  cursor: pointer;
+  box-shadow: none!important;
+}
+.container {
+  padding: 0;
+}
+.row {
+  margin: 18px 0 0;
+  gap: 16px;
+}
+
+#bg-ct {
+  background-color: hsl(189, 41%, 97%);
+  text-align: right;
+  padding-right: 16px;
+  color: hsl(183, 100%, 15%);
+}
+#bg-ct:hover {
+  color: hsl(183, 100%, 15%);
+  border: 2px solid hsl(172, 67%, 45%);
+  cursor: pointer;
+  caret-color: hsl(172, 67%, 45%) !important;
+}
+
+:focus-visible {
+  outline: none;
+}
+#format{
+display: flex;
+justify-content: space-between;
+}
+#error{
+font-size: 12px;
+color: rgb(209, 83, 51);
+margin-top: 38px;
+}
+/* output */
+.output-info {
+  margin-top: 30px;
+  padding: 45px 24px 24px;
+}
+.output-header {
+  color: hsl(0, 0%, 100%);
+  font-size: 13px;
+  font-weight: 700;
+  margin-bottom: 6px;
+}
+.output-content {
+  color: hsl(184, 14%, 56%);
+  font-size: 11px;
+  font-weight: 700;
+  margin-bottom: 32px;
+}
+.count {
+  font-size: 24px;
+  color: hsl(172, 67%, 45%);
+  font-weight: 700;
+}
+#reset {
+  width: 280px;
+  height: 48px;
+  border-radius: 5px;
+  border: none;
+  background-color: hsl(172, 67%, 45%);
+  font-size: 18px;
+  font-weight: 700;
+  color: hsl(183, 100%, 15%);
+}
+#reset:hover {
+  cursor: pointer;
+  background-color: hsl(173deg 61% 77%);
+}
+.output-left {
+  display: flex;
+  justify-content: space-between;
+}
+.tip-amount.total {
+  text-align: left;
+}
+
+@media (min-width: 1440px) {
+  body{
+    min-height: calc(100vh - 160px);
+  }
+  #tip{
+    display: flex;
+    flex-direction: column;
+    padding-top: 160px;
+  }
+  .calculator {
+    margin-top: 85px;
+    padding: 0 32px 0 48px;
+    width: 920px;
+    height: 480px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: row;
+  }
+  .header {
+    margin-top: 35px;
+  }
+  .form-control {
+    width: 378px;
+  }
+  .col-4 {
+    width: 117px;
+  }
+  .row {
+    gap: 13px;
+    display: flex;
+    width: 378px;
+  }
+  .output-info {
+    width: 413px;
+    height: 417px;
+    margin-top: 0;
+    margin-left: 48px;
+    padding: 60px 40px 40px;
+  }
+  .count{
+    font-size: 45px;
+  }
+  .tip-amount.total{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .output-left{
+    gap: 50px;
+  }
+  .output-content{
+    margin-bottom: 0;
+  }
+  #reset{
+    margin-top: 135px;
+    width: 333px;
+  }
+}
